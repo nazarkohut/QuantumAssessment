@@ -1,5 +1,5 @@
 # Problem asks us to find number of islands.
-***I have considered two approaches: depth first search solution and breadth first search solution.***
+***I have considered two approaches: a depth-first search solution and a breadth-first search solution.***
 
 ## Structure and usage
 
@@ -13,9 +13,9 @@ Run  `test_solutions.py` to test solutions on different test cases.
 ### BFS
 
 We step on the island and go line by line to neighbouring land cells.
-In case we step into water or already marked land we do not add it to queue of visited cells.
+If we step into water or already marked land, we do not add it to the queue of visited cells.
 
-Step by step visualization:
+Step-by-step visualization:
 
 ![img.png](assets/bfs/img.png)
 
@@ -23,7 +23,11 @@ Step by step visualization:
 
 ![img_2.png](assets/bfs/img_2.png)
 
+After some time we would get:
+
 ![img_3.png](assets/bfs/img_3.png)
+
+And then we would call our bfs function again for different island:
 
 ![img_4.png](assets/bfs/img_4.png)
 
@@ -38,7 +42,7 @@ Step by step visualization:
 
 In this approach we go in depth and then when we can not go any deeper we go to previous cell and try to go deeper from there.
 
-Step by step visualization:
+Step-by-step visualization:
 ![img.png](assets/dfs/img.png)
 
 ![img_1.png](assets/dfs/img_1.png)
