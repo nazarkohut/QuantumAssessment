@@ -1,3 +1,5 @@
 .idea
 .venv
 __pycache__
+
+tabular_regression/AutogluonModels/
